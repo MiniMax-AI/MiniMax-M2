@@ -35,9 +35,7 @@ It is recommended to use a virtual environment (such as **venv**, **conda**, or 
 We recommend installing vLLM in a fresh Python environment:
 
 ```bash
-uv venv
-source .venv/bin/activate
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly
+uv pip install 'triton-kernels @ git+https://github.com/triton-lang/triton.git@v3.5.0#subdirectory=python/triton_kernels'  vllm --extra-index-url https://wheels.vllm.ai/nightly --prerelease=allow
 ```
 
 Run the following command to start the vLLM server. vLLM will automatically download and cache the MiniMax-M2 model from Hugging Face.

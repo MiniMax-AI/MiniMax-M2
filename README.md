@@ -150,10 +150,10 @@ Download the model from HuggingFace repository: https://huggingface.co/MiniMaxAI
 
 ### vLLM
 
-We recommend using [vLLM](https://docs.vllm.ai/en/latest/) to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our [vLLM Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md).
+We recommend using [vLLM](https://docs.vllm.ai/en/stable/) to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our [vLLM Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md).
 
 ### SGLang
-We recommend using [SGLang](https://docs.sglang.ai/) to serve MiniMax-M2. Please refer to our [SGLang Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/sglang_deploy_guide.md).
+We recommend using [SGLang](https://docs.sglang.ai/) to serve MiniMax-M2. SGLang provides solid day-0 support for MiniMax-M2 model. Please refer to our [SGLang Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/sglang_deploy_guide.md) for more details, and thanks so much for our collaboration with the SGLang team.
 
 ### Inference Parameters
 We recommend using the following parameters for best performance: `temperature=1.0`, `top_p = 0.95`, `top_k = 20`.

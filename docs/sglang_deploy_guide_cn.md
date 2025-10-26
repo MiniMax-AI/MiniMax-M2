@@ -32,7 +32,7 @@
 
 建议使用虚拟环境（如 **venv**、**conda**、**uv**）以避免依赖冲突。
 
-建议在全新的 Python 环境中安装 SGLang。由于尚未 release，需要从源码手动编译：
+建议在全新的 Python 环境中安装 SGLang:
 ```bash
 git clone -b v0.5.4.post3 https://github.com/sgl-project/sglang.git
 cd sglang
@@ -55,7 +55,7 @@ python -m sglang.launch_server \
     --host 0.0.0.0 \
     --trust-remote-code \
     --port 8000 \
-    --mem-fraction-static 0.7
+    --mem-fraction-static 0.85
 ```
 
 8 卡部署命令：
@@ -66,11 +66,11 @@ python -m sglang.launch_server \
     --tp-size 8 \
     --ep-size 8 \
     --tool-call-parser minimax-m2 \
-    --reasoning-parser minimax-append-think \
-    --host 0.0.0.0 \
     --trust-remote-code \
+    --host 0.0.0.0 \
+    --reasoning-parser minimax-append-think \
     --port 8000 \
-    --mem-fraction-static 0.7
+    --mem-fraction-static 0.85
 ```
 
 ## 测试部署
@@ -101,7 +101,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 ### MiniMax-M2 model is not currently supported
 
-该 SGLang 版本过旧，请升级到最新版本。
+请升级到最新的稳定版本, >= v0.5.4.post3.
 
 ## 获取支持
 

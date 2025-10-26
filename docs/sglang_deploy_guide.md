@@ -32,7 +32,7 @@ The following are recommended configurations; actual requirements should be adju
 
 It is recommended to use a virtual environment (such as **venv**, **conda**, or **uv**) to avoid dependency conflicts. 
 
-We recommend installing SGLang in a fresh Python environment. Since it has not been released yet, you need to manually build it from the source code:
+We recommend installing SGLang in a fresh Python environment:
 
 ```bash
 git clone -b v0.5.4.post3 https://github.com/sgl-project/sglang.git
@@ -56,7 +56,7 @@ python -m sglang.launch_server \
     --host 0.0.0.0 \
     --trust-remote-code \
     --port 8000 \
-    --mem-fraction-static 0.7
+    --mem-fraction-static 0.85
 ```
 
 8-GPU deployment command:
@@ -67,14 +67,12 @@ python -m sglang.launch_server \
     --tp-size 8 \
     --ep-size 8 \
     --tool-call-parser minimax-m2 \
-    --reasoning-parser minimax-append-think \
-    --host 0.0.0.0 \
     --trust-remote-code \
+    --host 0.0.0.0 \
+    --reasoning-parser minimax-append-think \
     --port 8000 \
-    --mem-fraction-static 0.7
+    --mem-fraction-static 0.85
 ```
-
-
 
 ## Testing Deployment
 
@@ -104,7 +102,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 ### MiniMax-M2 model is not currently supported
 
-This SGLang version is outdated. Please upgrade to the latest version.
+Please upgrade to the latest stable version, >= v0.5.4.post3.
 
 ## Getting Support
 
