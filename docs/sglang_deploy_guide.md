@@ -1,6 +1,6 @@
-# MiniMax M2 Model vLLM Deployment Guide
+# MiniMax M2 Model SGLang Deployment Guide
 
-We recommend using [vLLM](https://docs.vllm.ai/en/stable/) to deploy the [MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) model. vLLM is a high-performance inference engine with excellent serving throughput, efficient and intelligent memory management, powerful batch request processing capabilities, and deeply optimized underlying performance. We recommend reviewing vLLM's official documentation to check hardware compatibility before deployment.
+We recommend using [SGLang](https://github.com/sgl-project/sglang) to deploy the [MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) model. SGLang is a high-performance inference engine with excellent serving throughput, efficient and intelligent memory management, powerful batch request processing capabilities, and deeply optimized underlying performance. We recommend reviewing SGLang's official documentation to check hardware compatibility before deployment.
 
 ## Applicable Models
 
@@ -32,39 +32,53 @@ The following are recommended configurations; actual requirements should be adju
 
 It is recommended to use a virtual environment (such as **venv**, **conda**, or **uv**) to avoid dependency conflicts. 
 
-We recommend installing vLLM in a fresh Python environment:
+We recommend installing SGLang in a fresh Python environment. Since it has not been released yet, you need to manually build it from the source code:
 
 ```bash
-uv venv
-source .venv/bin/activate
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly
+git clone -b v0.5.4.post3 https://github.com/sgl-project/sglang.git
+cd sglang
+
+# Install the python packages
+pip install --upgrade pip
+pip install -e "python"
 ```
 
-Run the following command to start the vLLM server. vLLM will automatically download and cache the MiniMax-M2 model from Hugging Face.
+Run the following command to start the SGLang server. SGLang will automatically download and cache the MiniMax-M2 model from Hugging Face.
 
 4-GPU deployment command:
 
 ```bash
-SAFETENSORS_FAST_GPU=1 vllm serve \
-    MiniMaxAI/MiniMax-M2 --trust-remote-code \
-    --tensor-parallel-size 4 \
-    --enable-auto-tool-choice --tool-call-parser minimax_m2 \
-    --reasoning-parser minimax_m2_append_think
+python -m sglang.launch_server \
+    --model-path MiniMaxAI/MiniMax-M2 \
+    --tp-size 4 \
+    --tool-call-parser minimax-m2 \
+    --reasoning-parser minimax-append-think \
+    --host 0.0.0.0 \
+    --trust-remote-code \
+    --port 8000 \
+    --mem-fraction-static 0.7
 ```
 
 8-GPU deployment command:
 
 ```bash
-SAFETENSORS_FAST_GPU=1 vllm serve \
-    MiniMaxAI/MiniMax-M2 --trust-remote-code \
-    --enable_expert_parallel --tensor-parallel-size 8 \
-    --enable-auto-tool-choice --tool-call-parser minimax_m2 \
-    --reasoning-parser minimax_m2_append_think 
+python -m sglang.launch_server \
+    --model-path MiniMaxAI/MiniMax-M2 \
+    --tp-size 8 \
+    --ep-size 8 \
+    --tool-call-parser minimax-m2 \
+    --reasoning-parser minimax-append-think \
+    --host 0.0.0.0 \
+    --trust-remote-code \
+    --port 8000 \
+    --mem-fraction-static 0.7
 ```
+
+
 
 ## Testing Deployment
 
-After startup, you can test the vLLM OpenAI-compatible API with the following command:
+After startup, you can test the SGLang OpenAI-compatible API with the following command:
 
 ```bash
 curl http://localhost:8000/v1/chat/completions \
@@ -90,19 +104,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 ### MiniMax-M2 model is not currently supported
 
-This vLLM version is outdated. Please upgrade to the latest version.
-
-### torch.AcceleratorError: CUDA error: an illegal memory access was encountered
-Add `--compilation-config "{\"cudagraph_mode\": \"PIECEWISE\"}"` to the startup parameters to resolve this issue. For example:
-
-```bash
-SAFETENSORS_FAST_GPU=1 vllm serve \
-    MiniMaxAI/MiniMax-M2 --trust-remote-code \
-    --enable_expert_parallel --tensor-parallel-size 8 \
-    --enable-auto-tool-choice --tool-call-parser minimax_m2 \
-    --reasoning-parser minimax_m2_append_think \
-    --compilation-config "{\"cudagraph_mode\": \"PIECEWISE\"}"
-```
+This SGLang version is outdated. Please upgrade to the latest version.
 
 ## Getting Support
 

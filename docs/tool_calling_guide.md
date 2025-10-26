@@ -1,12 +1,12 @@
-# MiniMax-M2 Function Call Guide
+# MiniMax-M2 Tool Calling Guide
 
 ## Introduction
 
-The MiniMax-M2 model supports function calling capabilities, enabling the model to identify when external functions need to be called and output function call parameters in a structured format. This document provides detailed instructions on how to use the function calling features of MiniMax-M2.
+The MiniMax-M2 model supports tool calling capabilities, enabling the model to identify when external tools need to be called and output tool call parameters in a structured format. This document provides detailed instructions on how to use the tool calling features of MiniMax-M2.
 
 ## Basic Example
 
-The following Python script implements a weather query function call example based on the OpenAI SDK:
+The following Python script implements a weather query tool call example based on the OpenAI SDK:
 
 ```python
 from openai import OpenAI
@@ -59,7 +59,7 @@ Result: Getting the weather for San Francisco, CA in celsius...
 
 ## Manually Parsing Model Output
 
-If you cannot use the built-in parser of inference engines that support MiniMax-M2, or need to use other inference frameworks (such as transformers, TGI, etc.), you can manually parse the model's raw output using the following method. This approach requires you to parse the XML tag format of the model output yourself.
+**We strongly recommend using vLLM or SGLang for parsing tool calls.** If you cannot use the built-in parser of inference engines (e.g., vLLM and SGLang) that support MiniMax-M2, or need to use other inference frameworks (such as transformers, TGI, etc.), you can manually parse the model's raw output using the following method. This approach requires you to parse the XML tag format of the model output yourself.
 
 ### Example Using Transformers
 
@@ -125,14 +125,14 @@ raw_output = response.json()["choices"][0]["text"]
 print("Raw output:", raw_output)
 
 # Use the parsing function below to process the output
-function_calls = parse_tool_calls(raw_output, tools)
+tool_calls = parse_tool_calls(raw_output, tools)
 ```
 
-## 🛠️ Function Call Definition
+## 🛠️ Tool Call Definition
 
-### Function Structure
+### Tool Structure
 
-Function calls need to define the `tools` field in the request body. Each function consists of the following parts:
+Tool calls need to define the `tools` field in the request body. Each tool consists of the following parts:
 
 ```json
 {
@@ -171,7 +171,7 @@ Function calls need to define the `tools` field in the request body. Each functi
 
 ### Internal Processing Format
 
-When processing within the MiniMax-M2 model, function definitions are converted to a special format and concatenated to the input text. Here is a complete example:
+When processing within the MiniMax-M2 model, tool definitions are converted to a special format and concatenated to the input text. Here is a complete example:
 
 ```
 ]~!b[]~b]system
@@ -209,7 +209,7 @@ When were the latest announcements from OpenAI and Gemini?[e~[
 - `]~b]tool`: Tool result message start marker
 - `<tools>...</tools>`: Tool definition area, each tool is wrapped with `<tool>` tag, content is JSON Schema
 - `<minimax:tool_call>...</minimax:tool_call>`: Tool call area
-- `<think>`: Thinking process marker during generation (optional)
+- `<think>...</think>`: Thinking process marker during generation
 
 ### Model Output Format
 
@@ -228,11 +228,11 @@ MiniMax-M2 uses structured XML tag format:
 </minimax:tool_call>
 ```
 
-Each function call uses the `<invoke name="function_name">` tag, and parameters use the `<parameter name="parameter_name">` tag wrapper.
+Each tool call uses the `<invoke name="function_name">` tag, and parameters use the `<parameter name="parameter_name">` tag wrapper.
 
-## Manually Parsing Function Call Results
+## Manually Parsing Tool Call Results
 
-### Parsing Function Calls
+### Parsing Tool Calls
 
 MiniMax-M2 uses structured XML tags, which require a different parsing approach. The core function is as follows:
 
@@ -427,9 +427,9 @@ for call in tool_calls:
     #         Arguments: {'location': 'San Francisco', 'unit': 'celsius'}
 ```
 
-### Executing Function Calls
+### Executing Tool Calls
 
-After parsing is complete, you can execute the corresponding function and construct the return result:
+After parsing is complete, you can execute the corresponding tool and construct the return result:
 
 ```python
 def execute_function_call(function_name: str, arguments: dict):
@@ -471,12 +471,13 @@ def execute_function_call(function_name: str, arguments: dict):
     return None
 ```
 
-### Returning Function Execution Results to the Model
+### Returning Tool Execution Results to the Model
 
-After successfully parsing function calls, you should add the function execution results to the conversation history so that the model can access and utilize this information in subsequent interactions. Refer to chat_template.jinja for concatenation format.
+After successfully parsing tool calls, you should add the tool execution results to the conversation history so that the model can access and utilize this information in subsequent interactions. Refer to [chat_template.jinja](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/chat_template.jinja) for concatenation format.
 
 ## References
 
 - [MiniMax-M2 Model Repository](https://github.com/MiniMax-AI/MiniMax-M2)
 - [vLLM Project Homepage](https://github.com/vllm-project/vllm)
+- [SGLang Project Homepage](https://github.com/sgl-project/sglang)
 - [OpenAI Python SDK](https://github.com/openai/openai-python)

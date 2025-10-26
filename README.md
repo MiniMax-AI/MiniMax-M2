@@ -11,8 +11,8 @@
   <a href="https://www.minimax.io" target="_blank" style="margin: 2px;">
     <img alt="Homepage" src="https://img.shields.io/badge/_Homepage-MiniMax-FF4040?style=flat-square&labelColor=2C3E50&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDkwLjE2IDQxMS43Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjMzLjQ1LDQwLjgxYTE3LjU1LDE3LjU1LDAsMSwwLTM1LjEsMFYzMzEuNTZhNDAuODIsNDAuODIsMCwwLDEtODEuNjMsMFYxNDVhMTcuNTUsMTcuNTUsMCwxLDAtMzUuMDksMHY3OS4wNmE0MC44Miw0MC44MiwwLDAsMS04MS42MywwVjE5NS40MmExMS42MywxMS42MywwLDAsMSwyMy4yNiwwdjI4LjY2YTE3LjU1LDE3LjU1LDAsMCwwLDM1LjEsMFYxNDVBNDAuODIsNDAuODIsMCwwLDEsMTQwLDE0NVYzMzEuNTZhMTcuNTUsMTcuNTUsMCwwLDAsMzUuMSwwVjIxNy41aDBWNDAuODFhNDAuODEsNDAuODEsMCwxLDEsODEuNjIsMFYyODEuNTZhMTEuNjMsMTEuNjMsMCwxLDEtMjMuMjYsMFptMjE1LjksNjMuNEE0MC44Niw0MC44NiwwLDAsMCw0MDguNTMsMTQ1VjMwMC44NWExNy41NSwxNy41NSwwLDAsMS0zNS4wOSwwdi0yNjBhNDAuODIsNDAuODIsMCwwLDAtODEuNjMsMFYzNzAuODlhMTcuNTUsMTcuNTUsMCwwLDEtMzUuMSwwVjMzMGExMS42MywxMS42MywwLDEsMC0yMy4yNiwwdjQwLjg2YTQwLjgxLDQwLjgxLDAsMCwwLDgxLjYyLDBWNDAuODFhMTcuNTUsMTcuNTUsMCwwLDEsMzUuMSwwdjI2MGE0MC44Miw0MC44MiwwLDAsMCw4MS42MywwVjE0NWExNy41NSwxNy41NSwwLDEsMSwzNS4xLDBWMjgxLjU2YTExLjYzLDExLjYzLDAsMCwwLDIzLjI2LDBWMTQ1QTQwLjg1LDQwLjg1LDAsMCwwLDQ0OS4zNSwxMDQuMjFaIi8+PC9zdmc+&logoWidth=20" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://chat.minimax.io/" target="_blank" style="margin: 2px;">
-    <img alt="Chat" src="https://img.shields.io/badge/_MiniMax_Chat-FF4040?style=flat-square&labelColor=2C3E50&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDkwLjE2IDQxMS43Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjMzLjQ1LDQwLjgxYTE3LjU1LDE3LjU1LDAsMSwwLTM1LjEsMFYzMzEuNTZhNDAuODIsNDAuODIsMCwwLDEtODEuNjMsMFYxNDVhMTcuNTUsMTcuNTUsMCwxLDAtMzUuMDksMHY3OS4wNmE0MC44Miw0MC44MiwwLDAsMS04MS42MywwVjE5NS40MmExMS42MywxMS42MywwLDAsMSwyMy4yNiwwdjI4LjY2YTE3LjU1LDE3LjU1LDAsMCwwLDM1LjEsMFYxNDVBNDAuODIsNDAuODIsMCwwLDEsMTQwLDE0NVYzMzEuNTZhMTcuNTUsMTcuNTUsMCwwLDAsMzUuMSwwVjIxNy41aDBWNDAuODFhNDAuODEsNDAuODEsMCwxLDEsODEuNjIsMFYyODEuNTZhMTEuNjMsMTEuNjMsMCwxLDEtMjMuMjYsMFptMjE1LjksNjMuNEE0MC44Niw0MC44NiwwLDAsMCw0MDguNTMsMTQ1VjMwMC44NWExNy41NSwxNy41NSwwLDAsMS0zNS4wOSwwdi0yNjBhNDAuODIsNDAuODIsMCwwLDAtODEuNjMsMFYzNzAuODlhMTcuNTUsMTcuNTUsMCwwLDEtMzUuMSwwVjMzMGExMS42MywxMS42MywwLDEsMC0yMy4yNiwwdjQwLjg2YTQwLjgxLDQwLjgxLDAsMCwwLDgxLjYyLDBWNDAuODFhMTcuNTUsMTcuNTUsMCwwLDEsMzUuMSwwdjI2MGE0MC44Miw0MC44MiwwLDAsMCw4MS42MywwVjE0NWExNy41NSwxNy41NSwwLDEsMSwzNS4xLDBWMjgxLjU2YTExLjYzLDExLjYzLDAsMCwwLDIzLjI2LDBWMTQ1QTQwLjg1LDQwLjg1LDAsMCwwLDQ0OS4zNSwxMDQuMjFaIi8+PC9zdmc+&logoWidth=20" style="display: inline-block; vertical-align: middle;"/>
+  <a href="https://agent.minimax.io/" target="_blank" style="margin: 2px;">
+    <img alt="Agent" src="https://img.shields.io/badge/_MiniMax_Agent-FF4040?style=flat-square&labelColor=2C3E50&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDkwLjE2IDQxMS43Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjMzLjQ1LDQwLjgxYTE3LjU1LDE3LjU1LDAsMSwwLTM1LjEsMFYzMzEuNTZhNDAuODIsNDAuODIsMCwwLDEtODEuNjMsMFYxNDVhMTcuNTUsMTcuNTUsMCwxLDAtMzUuMDksMHY3OS4wNmE0MC44Miw0MC44MiwwLDAsMS04MS42MywwVjE5NS40MmExMS42MywxMS42MywwLDAsMSwyMy4yNiwwdjI4LjY2YTE3LjU1LDE3LjU1LDAsMCwwLDM1LjEsMFYxNDVBNDAuODIsNDAuODIsMCwwLDEsMTQwLDE0NVYzMzEuNTZhMTcuNTUsMTcuNTUsMCwwLDAsMzUuMSwwVjIxNy41aDBWNDAuODFhNDAuODEsNDAuODEsMCwxLDEsODEuNjIsMFYyODEuNTZhMTEuNjMsMTEuNjMsMCwxLDEtMjMuMjYsMFptMjE1LjksNjMuNEE0MC44Niw0MC44NiwwLDAsMCw0MDguNTMsMTQ1VjMwMC44NWExNy41NSwxNy41NSwwLDAsMS0zNS4wOSwwdi0yNjBhNDAuODIsNDAuODIsMCwwLDAtODEuNjMsMFYzNzAuODlhMTcuNTUsMTcuNTUsMCwwLDEtMzUuMSwwVjMzMGExMS42MywxMS42MywwLDEsMC0yMy4yNiwwdjQwLjg2YTQwLjgxLDQwLjgxLDAsMCwwLDgxLjYyLDBWNDAuODFhMTcuNTUsMTcuNTUsMCwwLDEsMzUuMSwwdjI2MGE0MC44Miw0MC44MiwwLDAsMCw4MS42MywwVjE0NWExNy41NSwxNy41NSwwLDEsMSwzNS4xLDBWMjgxLjU2YTExLjYzLDExLjYzLDAsMCwwLDIzLjI2LDBWMTQ1QTQwLjg1LDQwLjg1LDAsMCwwLDQ0OS4zNSwxMDQuMjFaIi8+PC9zdmc+&logoWidth=20" style="display: inline-block; vertical-align: middle;"/>
   </a>
   <a href="https://www.minimax.io/platform" style="margin: 2px;">
     <img alt="API" src="https://img.shields.io/badge/⚡_API-Platform-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
@@ -41,12 +41,12 @@
 
 # Meet MiniMax-M2
 
-Today, we release (and open source?) MiniMax-M2, a **Mini** model built for **Max** coding & agentic workflows.
+Today, we release and open source MiniMax-M2, a **Mini** model built for **Max** coding & agentic workflows.
+
 **MiniMax-M2** redefines efficiency for agents. It's a compact, fast, and cost-effective model built for elite performance in coding and agentic tasks, all while maintaining powerful general intelligence. With just 10 billion activated parameters, MiniMax-M2 provides the sophisticated, end-to-end tool use performance expected from today's leading models, but in a streamlined form factor that makes deployment and scaling easier than ever.
 
 <p align="center">
   <img width="100%" src="figures/Bench.png">
-  <br>
 </p>
 
 ---
@@ -59,7 +59,7 @@ Today, we release (and open source?) MiniMax-M2, a **Mini** model built for **Ma
 
 **Agent Performance**. MiniMax-M2 plans and executes complex, long-horizon toolchains across shell, browser, retrieval, and code runners. In BrowseComp-style evaluations, it consistently locates hard-to-surface sources, maintains evidence traceable, and gracefully recovers from flaky steps.
 
-**Efficient Design**. With 10 billion activated parameters (200 billion in total), MiniMax-M2 delivers lower latency, lower cost, and higher throughput for interactive agents and batched sampling—perfectly aligned with the shift toward highly deployable models that still shine on coding and agentic tasks.
+**Efficient Design**. With 10 billion activated parameters (230 billion in total), MiniMax-M2 delivers lower latency, lower cost, and higher throughput for interactive agents and batched sampling—perfectly aligned with the shift toward highly deployable models that still shine on coding and agentic tasks.
 
 ---
 
@@ -86,10 +86,10 @@ These comprehensive evaluations test real-world end-to-end coding and agentic to
 >Notes: Data points marked with an asterisk (*) are taken directly from the model's official tech report or blog. All other metrics were obtained using the evaluation methods described below.
 >- SWE-bench Verified:  We use the same scaffold as [R2E-Gym](https://arxiv.org/pdf/2504.07164) (Jain et al. 2025) on top of OpenHands to test with agents on SWE tasks. All scores are validated on our internal infrastructure with 128k context length, 100 max steps, and no test-time scaling. All git-related content is removed to ensure agent sees only the code at the issue point. 
 >- Multi-SWE-Bench & SWE-bench Multilingual: All scores are averaged across 8 runs using the [claude-code](https://github.com/anthropics/claude-code) CLI (300 max steps) as the evaluation scaffold.
->- Terminal-Bench: All scores are evaluated with the official claude-code from the original [Terminal-Bench](https://www.tbench.ai/) repository(commit 94bf692), averaged over 8 runs to report the mean pass rate.
+>- Terminal-Bench: All scores are evaluated with the official claude-code from the original [Terminal-Bench](https://www.tbench.ai/) repository(commit `94bf692`), averaged over 8 runs to report the mean pass rate.
 >- ArtifactsBench: All Scores are computed by averaging three runs with the official implementation of [ArtifactsBench](https://github.com/Tencent-Hunyuan/ArtifactsBenchmark), using the stable Gemini-2.5-Pro as the judge model.
 >- BrowseComp & BrowseComp-zh & GAIA (text only) & xbench-DeepSearch: All scores reported use the same agent framework as [WebExplorer](https://arxiv.org/pdf/2509.06501) (Liu et al. 2025), with minor tools description adjustment. We use the 103-sample text-only GAIA validation subset following [WebExplorer](https://arxiv.org/pdf/2509.06501) (Liu et al. 2025).
->- HLE (w/ tools): All reported scores are obtained using search tools and a Python tool. The search tools employ the same agent framework as [WebExplorer](https://arxiv.org/pdf/2509.06501) (Liu et al. 2025), and the Python tool runs in a Jupyter environment.
+>- HLE (w/ tools): All reported scores are obtained using search tools and a Python tool. The search tools employ the same agent framework as [WebExplorer](https://arxiv.org/pdf/2509.06501) (Liu et al. 2025), and the Python tool runs in a Jupyter environment. We use the text-only HLE subset.
 >- τ²-Bench: All scores reported use "extended thinking with tool use", and employ GPT-4.1 as the user simulator.
 >- FinSearchComp-global: Official results are reported for GPT-5-Thinking, Gemini 2.5 Pro, and Kimi-K2. Other models are evaluated using the open-source [FinSearchComp](https://arxiv.org/pdf/2509.13160) (Hu et al. 2025) framework using both  search and Python tools, launched simultaneously for consistency.
 >- AgentCompany: All scores reported use OpenHands 0.42 agent framework.
@@ -120,7 +120,7 @@ We align with **Artificial Analysis**, which aggregates challenging benchmarks u
 
 ## Why activation size matters
 
-Keeping activations at **10B** compresses the critical path of agentic workflow - plan → act → verify - so loops feel responsive and cheaper to run:
+By maintaining activations around **10B** , the plan → act → verify loop in the agentic workflow is streamlined, improving responsiveness and reducing compute overhead:
 
 - **Faster feedback cycles** in compile-run-test and browse-retrieve-cite chains.
 
@@ -138,8 +138,30 @@ We look forward to your feedback and to collaborating with developers and resear
 
 ## How to Use
 
-- **MiniMax Agent**: Our general agent product, built on MiniMax-M2, is now publicly available and free for a limited time: https://agent.minimax.io/
+- Our product **MiniMax Agent**, built on MiniMax-M2, is now **publicly available and free** for a limited time: https://agent.minimaxi.io/
 
-- **MiniMax Open Platform**: https://www.minimax.io/
+- The MiniMax-M2 API is now live on the **MiniMax Open Platform** and is **free** for a limited time: https://platform.minimax.io/docs/guides/text-generation
 
-- **MiniMax-M2 Model Weights**: The open-source model weights are available on Hugging Face: https://huggingface.co/MiniMaxAI/
+- The MiniMax-M2 model weights are now **open-source**, allowing for local deployment and use: https://huggingface.co/MiniMaxAI/MiniMax-M2. 
+
+## Local Deployment Guide
+
+Download the model from HuggingFace repository: https://huggingface.co/MiniMaxAI/MiniMax-M2
+
+### vLLM
+
+We recommend using [vLLM](https://docs.vllm.ai/en/latest/) to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our [vLLM Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md).
+
+### SGLang
+We recommend using [SGLang](https://docs.sglang.ai/) to serve MiniMax-M2. Please refer to our [SGLang Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/sglang_deploy_guide.md).
+
+### Inference Parameters
+We recommend using the following parameters for best performance: `temperature=1.0`, `top_p = 0.95`, `top_k = 20`.
+
+## Tool Calling Guide
+
+Please refer to our [Tool Calling Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/tool_calling_guide.md).
+
+# Contact Us
+
+Contact us at [model@minimax.io](mailto:model@minimax.io).
