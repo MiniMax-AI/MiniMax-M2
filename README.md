@@ -146,7 +146,7 @@ We look forward to your feedback and to collaborating with developers and resear
 
 ## Local Deployment Guide
 
-Download the model from HuggingFace repository: https://huggingface.co/MiniMaxAI/MiniMax-M2
+Download the model from HuggingFace repository: https://huggingface.co/MiniMaxAI/MiniMax-M2. We recommend using the following inference frameworks (listed alphabetically) to serve the model:
 
 ### SGLang
 
