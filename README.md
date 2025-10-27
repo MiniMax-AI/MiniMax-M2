@@ -156,10 +156,10 @@ We recommend using [SGLang](https://docs.sglang.ai/) to serve MiniMax-M2. SGLang
 
 We recommend using [vLLM](https://docs.vllm.ai/en/stable/) to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our [vLLM Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md).
 
-IMPORTANT: MiniMax-M2 is an interleaved thinking model. Therefore, when using it, it is important to retain the thinking content from the assistant's turns within the historical messages. In the model's output content, we use the `<think>...</think>` format to wrap the assistant's thinking content. When using the model, you must ensure that the historical content is passed back in its original format. Do not remove the `<think>...</think>` part, otherwise, the model's performance will be negatively affected.
-
 ### Inference Parameters
 We recommend using the following parameters for best performance: `temperature=1.0`, `top_p = 0.95`, `top_k = 40`.
+
+IMPORTANT: MiniMax-M2 is an interleaved thinking model. Therefore, when using it, it is important to retain the thinking content from the assistant's turns within the historical messages. In the model's output content, we use the `<think>...</think>` format to wrap the assistant's thinking content. When using the model, you must ensure that the historical content is passed back in its original format. Do not remove the `<think>...</think>` part, otherwise, the model's performance will be negatively affected.
 
 ## Tool Calling Guide
 
