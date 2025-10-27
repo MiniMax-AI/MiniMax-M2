@@ -138,7 +138,7 @@ We look forward to your feedback and to collaborating with developers and resear
 
 ## How to Use
 
-- Our product **MiniMax Agent**, built on MiniMax-M2, is now **publicly available and free** for a limited time: https://agent.minimaxi.io/
+- Our product **MiniMax Agent**, built on MiniMax-M2, is now **publicly available and free** for a limited time: https://agent.minimax.io/
 
 - The MiniMax-M2 API is now live on the **MiniMax Open Platform** and is **free** for a limited time: https://platform.minimax.io/docs/guides/text-generation
 
