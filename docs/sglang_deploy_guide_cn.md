@@ -101,7 +101,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 ### MiniMax-M2 model is not currently supported
 
-请升级到最新的稳定版本, >= v0.5.4.post3.
+请升级到最新的稳定版本, >= v0.5.4.post1.
 
 ## 获取支持
 
