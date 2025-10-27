@@ -34,7 +34,7 @@
 
 建议在全新的 Python 环境中安装 SGLang:
 ```bash
-git clone -b v0.5.4.post3 https://github.com/sgl-project/sglang.git
+git clone -b v0.5.4.post1 https://github.com/sgl-project/sglang.git
 cd sglang
 
 # Install the python packages
