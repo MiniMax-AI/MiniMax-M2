@@ -1,5 +1,7 @@
 # MiniMax-M2 工具调用指南
 
+[英文版](./tool_calling_guide.md) | [中文版](./tool_calling_guide_cn.md)
+
 ## 简介
 
 MiniMax-M2 模型支持工具调用功能，使模型能够识别何时需要调用外部工具，并以结构化格式输出工具调用参数。本文档提供了有关如何使用 MiniMax-M2 工具调用功能的详细说明。

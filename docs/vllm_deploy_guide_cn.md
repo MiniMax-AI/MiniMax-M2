@@ -1,5 +1,7 @@
 # MiniMax M2 模型 vLLM 部署指南
 
+[英文版](./vllm_deploy_guide.md) | [中文版](./vllm_deploy_guide_cn.md)
+
 我们推荐使用 [vLLM](https://docs.vllm.ai/en/stable/) 来部署 [MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) 模型。vLLM 是一个高性能的推理引擎，其具有卓越的服务吞吐、高效智能的内存管理机制、强大的批量请求处理能力、深度优化的底层性能等特性。我们建议在部署之前查看 vLLM 的官方文档以检查硬件兼容性。
 
 ## 本文档适用模型

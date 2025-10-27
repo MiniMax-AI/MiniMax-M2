@@ -1,5 +1,7 @@
 # MiniMax-M2 Tool Calling Guide
 
+[English Version](./tool_calling_guide.md) | [Chinese Version](./tool_calling_guide_cn.md)
+
 ## Introduction
 
 The MiniMax-M2 model supports tool calling capabilities, enabling the model to identify when external tools need to be called and output tool call parameters in a structured format. This document provides detailed instructions on how to use the tool calling features of MiniMax-M2.

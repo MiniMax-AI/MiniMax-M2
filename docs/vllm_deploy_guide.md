@@ -1,5 +1,7 @@
 # MiniMax M2 Model vLLM Deployment Guide
 
+[English Version](./vllm_deploy_guide.md) | [Chinese Version](./vllm_deploy_guide_cn.md)
+
 We recommend using [vLLM](https://docs.vllm.ai/en/stable/) to deploy the [MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) model. vLLM is a high-performance inference engine with excellent serving throughput, efficient and intelligent memory management, powerful batch request processing capabilities, and deeply optimized underlying performance. We recommend reviewing vLLM's official documentation to check hardware compatibility before deployment.
 
 ## Applicable Models

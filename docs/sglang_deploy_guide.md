@@ -1,5 +1,7 @@
 # MiniMax M2 Model SGLang Deployment Guide
 
+[English Version](./sglang_deploy_guide.md) | [Chinese Version](./sglang_deploy_guide_cn.md)
+
 We recommend using [SGLang](https://github.com/sgl-project/sglang) to deploy the [MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2) model. SGLang is a high-performance inference engine with excellent serving throughput, efficient and intelligent memory management, powerful batch request processing capabilities, and deeply optimized underlying performance. We recommend reviewing SGLang's official documentation to check hardware compatibility before deployment.
 
 ## Applicable Models
@@ -35,7 +37,7 @@ It is recommended to use a virtual environment (such as **venv**, **conda**, or 
 We recommend installing SGLang in a fresh Python environment:
 
 ```bash
-git clone -b v0.5.4.post3 https://github.com/sgl-project/sglang.git
+git clone -b v0.5.4.post1 https://github.com/sgl-project/sglang.git
 cd sglang
 
 # Install the python packages
