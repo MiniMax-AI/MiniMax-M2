@@ -32,7 +32,7 @@
     <img alt="ModelScope" src="https://img.shields.io/badge/🤖️_ModelScope-MiniMax-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
   </a>
   <a href="https://github.com/MiniMax-AI/MiniMax-M2/blob/main/LICENSE" style="margin: 2px;">
-    <img alt="License" src="https://img.shields.io/badge/⚖️_License-Apache_2.0-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
+    <img alt="License" src="https://img.shields.io/badge/⚖️_License-MIT-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
   </a>
   <a href="https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg" target="_blank" style="margin: 2px;">
     <img alt="WeChat" src="https://img.shields.io/badge/💬_WeChat-MiniMax-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
@@ -43,7 +43,7 @@
 
 Today, we release and open source MiniMax-M2, a **Mini** model built for **Max** coding & agentic workflows.
 
-**MiniMax-M2** redefines efficiency for agents. It's a compact, fast, and cost-effective model built for elite performance in coding and agentic tasks, all while maintaining powerful general intelligence. With just 10 billion activated parameters, MiniMax-M2 provides the sophisticated, end-to-end tool use performance expected from today's leading models, but in a streamlined form factor that makes deployment and scaling easier than ever.
+**MiniMax-M2** redefines efficiency for agents. It's a compact, fast, and cost-effective MoE model (230 billion total parameters with 10 billion active parameters) built for elite performance in coding and agentic tasks, all while maintaining powerful general intelligence. With just 10 billion activated parameters, MiniMax-M2 provides the sophisticated, end-to-end tool use performance expected from today's leading models, but in a streamlined form factor that makes deployment and scaling easier than ever.
 
 <p align="center">
   <img width="100%" src="figures/Bench.png">
@@ -155,6 +155,8 @@ We recommend using [SGLang](https://docs.sglang.ai/) to serve MiniMax-M2. SGLang
 ### vLLM
 
 We recommend using [vLLM](https://docs.vllm.ai/en/stable/) to serve MiniMax-M2. vLLM provides efficient day-0 support of MiniMax-M2 model, check https://docs.vllm.ai/projects/recipes/en/latest/MiniMax/MiniMax-M2.html for latest deployment guide. We also provide our [vLLM Deployment Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/vllm_deploy_guide.md).
+
+IMPORTANT: MiniMax-M2 is an interleaved thinking model. Therefore, when using it, it is important to retain the thinking content from the assistant's turns within the historical messages. In the model's output content, we use the `<think>...</think>` format to wrap the assistant's thinking content. When using the model, you must ensure that the historical content is passed back in its original format. Do not remove the `<think>...</think>` part, otherwise, the model's performance will be negatively affected.
 
 ### Inference Parameters
 We recommend using the following parameters for best performance: `temperature=1.0`, `top_p = 0.95`, `top_k = 40`.
