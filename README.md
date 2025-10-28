@@ -165,6 +165,16 @@ IMPORTANT: MiniMax-M2 is an interleaved thinking model. Therefore, when using it
 
 Please refer to our [Tool Calling Guide](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/docs/tool_calling_guide.md).
 
+
+
+# Community Showcases
+
+> The projects below are built and maintained by the community/partners. They are not official MiniMax products, and results may vary.
+
+- **AnyCoder** — a web IDE–style coding assistant Space on Hugging Face, **uses MiniMax-M2 as the default model**: https://huggingface.co/spaces/akhaliq/anycoder  
+  *Maintainer:* @akhaliq (Hugging Face)
+
+
 # Contact Us
 
 Contact us at [model@minimax.io](mailto:model@minimax.io).
