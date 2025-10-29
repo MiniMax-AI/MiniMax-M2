@@ -112,4 +112,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 - 通过邮箱 [model@minimax.io](mailto:model@minimax.io) 等官方渠道联系我们的技术支持团队
 
 - 在我们的 [GitHub](https://github.com/MiniMax-AI) 仓库提交 Issue
+
+- 通过我们的 [M2企业微信群](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/figures/wechat.jpeg) 反馈
+
 我们会持续优化模型的部署体验，欢迎反馈！

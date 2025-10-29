@@ -483,3 +483,15 @@ def execute_function_call(function_name: str, arguments: dict):
 - [vLLM 项目主页](https://github.com/vllm-project/vllm)
 - [SGLang 项目主页](https://github.com/sgl-project/sglang)
 - [OpenAI Python SDK](https://github.com/openai/openai-python)
+
+## 获取支持
+
+如果遇到任何问题：
+
+- 通过邮箱 [model@minimax.io](mailto:model@minimax.io) 等官方渠道联系我们的技术支持团队
+
+- 在我们的仓库提交 Issue
+
+- 通过我们的[M2企业微信群](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/figures/wechat.jpeg) 反馈
+
+我们会持续优化模型的使用体验，欢迎反馈！
