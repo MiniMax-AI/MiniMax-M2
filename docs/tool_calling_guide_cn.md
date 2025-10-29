@@ -492,6 +492,6 @@ def execute_function_call(function_name: str, arguments: dict):
 
 - 在我们的仓库提交 Issue
 
-- 通过我们的[M2企业微信群](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/figures/wechat.jpeg) 反馈
+- 通过我们的 [官方企业微信交流群](https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg) 反馈
 
 我们会持续优化模型的使用体验，欢迎反馈！

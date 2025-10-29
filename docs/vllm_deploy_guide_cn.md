@@ -111,6 +111,6 @@ SAFETENSORS_FAST_GPU=1 vllm serve \
 
 - 在我们的 [GitHub](https://github.com/MiniMax-AI) 仓库提交 Issue
 
-- 通过我们的 [M2企业微信群](https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/figures/wechat.jpeg) 反馈
+- 通过我们的 [官方企业微信交流群](https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg) 反馈
 
 我们会持续优化模型的部署体验，欢迎反馈！

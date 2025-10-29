@@ -34,7 +34,7 @@
   <a href="https://github.com/MiniMax-AI/MiniMax-M2/blob/main/LICENSE" style="margin: 2px;">
     <img alt="License" src="https://img.shields.io/badge/⚖️_License-MIT-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/figures/wechat.jpeg" target="_blank" style="margin: 2px;">
+  <a href="https://github.com/MiniMax-AI/MiniMax-AI.github.io/blob/main/images/wechat-qrcode.jpeg" target="_blank" style="margin: 2px;">
     <img alt="WeChat" src="https://img.shields.io/badge/💬_WeChat-MiniMax-FF4040?style=flat-square&labelColor=2C3E50" style="display: inline-block; vertical-align: middle;"/>
   </a>
 </div>
