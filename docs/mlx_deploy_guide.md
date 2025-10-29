@@ -1,7 +1,4 @@
-Here's an improved, polished, and professional version of your documentation with better structure, clarity, grammar, accuracy, and usability:
-
-
-### MLX
+## MLX deployment guide
 
 Run, serve, and fine-tune [**MiniMax-M2**](https://huggingface.co/MiniMaxAI/MiniMax-M2) locally on your Mac using the **MLX** framework. This guide gets you up and running quickly.
 
