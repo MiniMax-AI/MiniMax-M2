@@ -1,0 +1,27 @@
+name: Feature Request
+description: Propose a new feature or enhancement for the project.
+title: "[Request]: "
+labels: ["enhancement", "feature-request", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide the following details to help us understand your proposal.
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: |
+        Please describe the feature you have requested and the rationale behind it.
+        The following template is recommended. Feel free to modify it as you needed.
+      value: |
+        ## Introduction
+        I would like that ...
+
+        ## Rational
+        Implementation of this feature will help the following usecase:
+        - ...
+
+    validations:
+      required: true 
