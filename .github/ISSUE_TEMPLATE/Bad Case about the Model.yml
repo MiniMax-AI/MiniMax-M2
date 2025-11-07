@@ -44,14 +44,10 @@ body:
       value: |
         ## Steps to reproduce
         The bug can be reproduced with the following steps:
-        1. ...
-        2. ...
 
         ## Expected behavior
 
-
         ## Error logs
-
 
         ## Paste the related screenshots here
 

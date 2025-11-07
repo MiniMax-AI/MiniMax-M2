@@ -29,18 +29,9 @@ body:
         
         ## API type or Coding Agent Tool
 
-        ## Steps to Reproduce
-        1. ...
-        2. ...
-
-
-
         ## Example Input or Query
-        system: ...
-        user: ...
 
         ## Error Logs / Trace ID
-        ...
 
         ## Screenshots
 
