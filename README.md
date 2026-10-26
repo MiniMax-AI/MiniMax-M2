@@ -19,7 +19,7 @@
 </div>
 <div align="center" style="line-height: 1.2; font-size:16px;">
   <a href="https://agent.minimax.io/" target="_blank" style="display: inline-block; margin: 4px;">
-    MiniMax Agent
+    MiniMax Code
   </a> | 
   <a href="https://platform.minimax.io/docs/guides/text-generation" target="_blank" style="display: inline-block; margin: 4px;">
     ⚡️ API (Now Free for a limited time!)
@@ -145,7 +145,7 @@ We look forward to your feedback and to collaborating with developers and resear
 
 ## How to Use
 
-- Our product **MiniMax Agent**, built on MiniMax-M2, is now **publicly available and free** for a limited time: https://agent.minimax.io/
+- Our product **MiniMax Code**, built on MiniMax-M2, is now **publicly available and free** for a limited time: https://agent.minimax.io/
 
 - The MiniMax-M2 API is now live on the **MiniMax Open Platform** and is **free** for a limited time: https://platform.minimax.io/docs/guides/text-generation
 
